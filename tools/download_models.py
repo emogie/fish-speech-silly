@@ -22,16 +22,16 @@ def check_and_download_files(repo_id, file_list, local_dir):
 
 
 # 1st
-repo_id_1 = "fishaudio/fish-speech-1.4"
-local_dir_1 = "./checkpoints/fish-speech-1.4"
+repo_id_1 = "fishaudio/openaudio-s1-mini"
+local_dir_1 = "./checkpoints/openaudio-s1-mini"
 files_1 = [
+    ".gitattributes",
     "model.pth",
     "README.md",
-    "special_tokens_map.json",
-    "tokenizer_config.json",
-    "tokenizer.json",
+    "special_tokens.json",
+    "tokenizer.tiktoken",
     "config.json",
-    "firefly-gan-vq-fsq-8x1024-21hz-generator.pth",
+    "codec.pth",
 ]
 
 # 3rd

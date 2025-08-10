@@ -133,7 +133,7 @@ if "%USE_MIRROR%"=="true" (
 echo "HF_ENDPOINT: !HF_ENDPOINT!"
 echo "NO_PROXY: !no_proxy!"
 
-%PIP_CMD% install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+%PIP_CMD% install -U torch==2.7.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
 %PIP_CMD% install -e . --upgrade-strategy only-if-needed
 

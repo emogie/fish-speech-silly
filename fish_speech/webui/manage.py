@@ -583,7 +583,7 @@ def fresh_tb_dir():
 
 
 def list_decoder_models():
-    paths = [str(p) for p in Path("checkpoints").glob("fish*/firefly*.pth")]
+    paths = [str(p) for p in Path("checkpoints").glob("openaudio*/code*.pth")]
     if not paths:
         logger.warning("No decoder model found")
     return paths
@@ -593,6 +593,7 @@ def list_llama_models():
     choices = [str(p.parent) for p in Path("checkpoints").glob("merged*/*model*.pth")]
     choices += [str(p.parent) for p in Path("checkpoints").glob("fish*/*model*.pth")]
     choices += [str(p.parent) for p in Path("checkpoints").glob("fs*/*model*.pth")]
+    choices += [str(p.parent) for p in Path("checkpoints").glob("openaudio*/*model*.pth")]
     choices = sorted(choices, reverse=True)
     if not choices:
         logger.warning("No LLaMA model found")

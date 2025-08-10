@@ -113,8 +113,8 @@ class Seafoam(Base):
             slider_color_dark="*secondary_600",
             block_title_text_weight="600",
             block_border_width="3px",
-            block_shadow="*shadow_drop_lg",
-            button_shadow="*shadow_drop_lg",
+            button_primary_shadow="*shadow_drop_lg",
+            button_secondary_shadow="*shadow_drop_lg",
             button_small_padding="0px",
             button_large_padding="3px",
         )

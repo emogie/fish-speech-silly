@@ -13,8 +13,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+from fish_speech.models.text2semantic.inference import load_model
 from fish_speech.models.text2semantic.llama import find_multiple
-from tools.llama.generate import load_model
 
 ##### Quantization Primitives ######
 
@@ -451,7 +451,7 @@ def quantize(checkpoint_path: Path, mode: str, groupsize: int, timestamp: str) -
         precision=precision,
         compile=False,
     )
-    vq_model = "firefly-gan-vq-fsq-8x1024-21hz-generator.pth"
+    vq_model = "codec.pth"
     now = timestamp if timestamp != "None" else generate_folder_name()
 
     if mode == "int8":

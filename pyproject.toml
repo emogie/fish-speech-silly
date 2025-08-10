@@ -8,13 +8,13 @@ description = "Fish Speech"
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["TTS", "Speech"]
-license = {text = "CC BY-NC-SA 4.0"}
+license = {text = "Apache-2.0"}
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
     "numpy<=1.26.4",
-    "transformers>=4.35.2",
+    "transformers>=4.45.2",
     "datasets==2.18.0",
     "lightning>=2.1.0",
     "hydra-core>=1.3.2",
@@ -23,7 +23,7 @@ dependencies = [
     "einops>=0.7.0",
     "librosa>=0.10.1",
     "rich>=13.5.3",
-    "gradio>=4.0.0",
+    "gradio>=5.0.0",
     "wandb>=0.15.11",
     "grpcio>=1.58.0",
     "kui>=1.6.0",
@@ -38,16 +38,23 @@ dependencies = [
     "zstandard>=0.22.0",
     "pydub",
     "faster_whisper",
+    "pyaudio",
     "modelscope==1.17.1",
     "funasr==1.1.5",
     "opencc-python-reimplemented==0.1.7",
     "silero-vad",
     "ormsgpack",
+    "tiktoken>=0.8.0",
+    "pydantic==2.9.2",
+    "cachetools",
+    "descript-audio-codec",
+    "descript-audiotools"
+	"triton-windows"
 ]
 
 [project.optional-dependencies]
 stable = [
-    "torch>=2.3.1",
+    "torch>=2.7.1",
     "torchaudio",
 ]
 

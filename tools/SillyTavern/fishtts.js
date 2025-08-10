@@ -188,7 +188,7 @@ class FishTtsProvider {
     async fetchTtsGeneration(inputText, speaker, emotion) {
         console.info(`Generating TTS for speaker ${speaker} and emotion ${emotion}`);
         const response = await doExtrasFetch(
-            `${this.settings.provider_endpoint}/v1/invoke`,
+            `${this.settings.provider_endpoint}/v1/tts`,
             {
                 method: 'POST',
                 headers: {
