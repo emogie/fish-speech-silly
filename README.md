@@ -1,3 +1,16 @@
+Untested
+as I didn't had time to test and to figure out how it is working :P
+
+Update to 
+Torch-2.7.1
+Gradio-5.0
+and Fish-Speech from 1.4 to 1.5 or with new Name Openaudio-S1-mini
+
+Servers are starting inference and API, but I didn't accessed them vioa Silly Tavern, as told I didn't had time to figure out how this is working (to less time, probably next week, I will train voices and try it in SillyTavern)
+
+Known "things",
+not all available languages which were introduced in 1.5 are added to Gradio GUI of API / Inference.
+
 <div align="center">
 <h1>Fish Speech</h1>
 
